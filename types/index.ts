@@ -11,7 +11,7 @@ type ThumbnailResult = {
   height: number;
 }
 
-type SearchResult = {
+type ISearchResult = {
   query?: {
     pages?: IResult[];
   }
