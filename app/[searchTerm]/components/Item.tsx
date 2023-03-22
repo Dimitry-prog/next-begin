@@ -11,7 +11,7 @@ const Item = ({result}: ItemProps) => {
       {
         result?.thumbnail?.source
           ? (
-            <div className="flex flex-row gap-4">
+            <div className="pb-2 flex flex-row gap-4 border-b border-black">
               <img
                 src={result.thumbnail?.source}
                 alt={result.title}
@@ -20,7 +20,7 @@ const Item = ({result}: ItemProps) => {
               />
 
               <div className="flex flex-col justify-center">
-                <h2 className="text-lg font-bold">
+                <h2 className="text-lg font-bold hover:opacity-70 transition-all duration-500">
                   <Link
                     href={`https://en.wikipedia.org/?curid=${result.pageid}`}
                     target="_blank"
@@ -34,8 +34,8 @@ const Item = ({result}: ItemProps) => {
             </div>
           )
           : (
-            <div className="flex flex-col justify-center">
-              <h2>
+            <div className="pb-2 flex flex-col justify-center border-b border-black">
+              <h2 className="text-lg font-bold hover:opacity-70 transition-all duration-500">
                 <Link
                   href={`https://en.wikipedia.org/?curied=${result.pageid}`}
                   target="_blank"

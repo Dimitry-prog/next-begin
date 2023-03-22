@@ -31,13 +31,13 @@ const SearchResults = async ({params}: SearchResultsProps) => {
   const results: IResult[] | undefined = data?.query?.pages;
 
   return (
-    <main className="max-w-lg min-h-screen py-1 mx-auto bg-slate-200">
+    <main className="max-w-lg py-1 mx-auto bg-slate-200">
       {
         results
           ? Object.values(results).map((result) => (
             <Item result={result} key={result.pageid}/>
           ))
-          : <h2 className="p-2 text-xl">{`${params.searchTerm} Not Found`}</h2>
+          : <h2 className="p-2 text-xl text-center">{`${params.searchTerm} Not Found`}</h2>
       }
     </main>
   );

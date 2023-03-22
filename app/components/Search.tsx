@@ -26,7 +26,7 @@ const Search = () => {
         type="submit"
         className="p-2 ml-2 text-xl font-bold bg-slate-300 rounded-xl active:scale-75 transition-all duration-500"
       >
-        😹
+        🔎
       </button>
     </form>
   );
