@@ -1,0 +1,5 @@
+{
+  "/[searchTerm]/page": "/[searchTerm]",
+  "/api/hello/route": "/api/hello",
+  "/page": "/"
+}
