@@ -1,12 +1,15 @@
 {
   "name": "my-app",
   "version": "0.1.0",
+  "homepage": "https://dimitry-prog.github.io/small-wikipedia/",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "npm run build && npm run gh-pages",
+    "gh-pages": "gh-pages -d build"
   },
   "dependencies": {
     "@types/node": "18.15.5",
@@ -21,6 +24,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
+    "gh-pages": "^5.0.0",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.7"
   }
